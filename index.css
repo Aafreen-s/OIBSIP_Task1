@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-image: url('./head.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.cta-button {
+    display: block;
+    margin: 1rem auto;
+    background-image: linear-gradient(to right, #21a8d1, #14efff);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-image 0.3s;
+}
+
+.cta-button:hover {
+    background-image: linear-gradient(to right, #43e3ff, #009fbb);
+}
+
+/* ... Previous selectors and styles ... */
+
+#features {
+    padding: 2rem;
+    text-align: center;
+}
+
+#features .feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+#features .feature-item {
+    flex-basis: calc(25% - 1rem);
+    text-align: left;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+#features .feature-item:hover {
+    transform: translateY(-5px);
+    /* transform: scale(2.5); */
+    box-shadow: 0 1px 10px 0px rgba(0, 242, 255, 0.9);
+}
+
+#features .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.feature-item img
+{
+    height: 280px;
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/* ... Other selectors and styles ... */
+
+/* Adding .cta-button:hover to #features selector by mistake */
+#features .cta-button:hover {
+    background-color: #444;
+}
+
+/* Remove this line as it's incorrect */
+#features {
+    .cta-button:hover {
+        background-color: #444;
+    }
+}
+
+/* Add this line to the bottom of your CSS to fix the issue */
+.cta-button {
+    display: block;
+    margin: 1rem auto;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+#colors {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+#colors h2 {
+    margin-bottom: 1rem;
+}
+
+.color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.color-item {
+    width: 30%;
+    height: 250px;
+    border-radius: 5%;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+
+.color-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 10px 0px rgba(3, 204, 215, 0.67);
+}
+
+.color-item img
+{
+    height: 250px;
+    width: 100%;
+    border-radius: 5%;
+    
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+footer p
+{
+    width: 100%;
+    padding-left: 50%;
+    background-color: rgba(191, 252, 255, 0.152);
+}
